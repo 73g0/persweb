@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Leopold Gregor Goedhart</title>
+    <link>http://example.org/posts/</link>
+    <description>Recent content in Posts on Leopold Gregor Goedhart</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Mar 2023 21:38:40 +0100</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Ultimate Way To Read Textbooks</title>
+      <link>http://example.org/posts/20230313_ultimate_way_to_read_textbooks/</link>
+      <pubDate>Mon, 13 Mar 2023 21:38:40 +0100</pubDate>
+      
+      <guid>http://example.org/posts/20230313_ultimate_way_to_read_textbooks/</guid>
+      <description>The Ultimate Way To Read Textbooks Repeat for all chapters:
+Flip through each page in the chapter (yields info about what to look for, the structure and other subconscious benefits) Read the questions at the end of the chapter (Baader-Meinhof Phenomenon) Read bold words in the chapter (titles, subtitles, subsubtitles) to get an even better understanding of the structure Read the first and last sentence of each paragraph (first sentence gives an indication on what the rest of the paragraph is about; the last sentence sums up the important information) Read through the chapter and take notes (brings everything together and lets you connect the dots) </description>
+    </item>
+    
+  </channel>
+</rss>
