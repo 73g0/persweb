@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on Leopold Gregor Goedhart</title>
-    <link>http://example.org/pages/</link>
+    <link>https://leopoldgoedhart.com/pages/</link>
     <description>Recent content in Pages on Leopold Gregor Goedhart</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Mar 2023 15:29:01 +0100</lastBuildDate><atom:link href="http://example.org/pages/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Mar 2023 15:29:01 +0100</lastBuildDate><atom:link href="https://leopoldgoedhart.com/pages/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Contact</title>
-      <link>http://example.org/pages/contact/</link>
+      <link>https://leopoldgoedhart.com/pages/contact/</link>
       <pubDate>Tue, 14 Mar 2023 15:29:01 +0100</pubDate>
       
-      <guid>http://example.org/pages/contact/</guid>
+      <guid>https://leopoldgoedhart.com/pages/contact/</guid>
       <description>Contact Email
 Phone</description>
     </item>
     
     <item>
       <title>CV</title>
-      <link>http://example.org/pages/cv/</link>
+      <link>https://leopoldgoedhart.com/pages/cv/</link>
       <pubDate>Mon, 13 Mar 2023 23:00:29 +0100</pubDate>
       
-      <guid>http://example.org/pages/cv/</guid>
+      <guid>https://leopoldgoedhart.com/pages/cv/</guid>
       <description>CV File Have a look @ my current CV!
 Timeline 2006 - 2010 &amp;ldquo;Katholische Schule Hochalle&amp;rdquo; (Elementary school in Hamburg, Germany)
 2010 - 2018 &amp;ldquo;Gymnasium Eppendorf&amp;rdquo; (High school in Hamburg, Germany)
@@ -34,10 +34,10 @@ July - September Houlihan Lokey (Internship in Tel Aviv, Israel)
     
     <item>
       <title>About</title>
-      <link>http://example.org/pages/about/</link>
+      <link>https://leopoldgoedhart.com/pages/about/</link>
       <pubDate>Mon, 13 Mar 2023 22:01:29 +0100</pubDate>
       
-      <guid>http://example.org/pages/about/</guid>
+      <guid>https://leopoldgoedhart.com/pages/about/</guid>
       <description>About Hi! My name is Leopold Goedhart and I am currently a B.Sc. student @ the physics department of ETH in Zürich (Switzerland).
 I was born and raised in Hamburg (Germany) and visited elementary and high school there. In July 2018 I graduated and started my gap year. From January to March 2019 I was an intern at F&amp;amp;S Solar in Santo Domingo, Dominican Republic. This internship was followed by a stay in Israel from April to June 2019.</description>
     </item>

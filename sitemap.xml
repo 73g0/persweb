@@ -2,29 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://leopoldgoedhart.com/</loc>
     <lastmod>2023-03-14T15:29:01+01:00</lastmod>
   </url><url>
-    <loc>http://example.org/pages/contact/</loc>
+    <loc>https://leopoldgoedhart.com/pages/contact/</loc>
     <lastmod>2023-03-14T15:29:01+01:00</lastmod>
   </url><url>
-    <loc>http://example.org/pages/</loc>
+    <loc>https://leopoldgoedhart.com/pages/</loc>
     <lastmod>2023-03-14T15:29:01+01:00</lastmod>
   </url><url>
-    <loc>http://example.org/pages/cv/</loc>
+    <loc>https://leopoldgoedhart.com/pages/cv/</loc>
     <lastmod>2023-03-13T23:00:29+01:00</lastmod>
   </url><url>
-    <loc>http://example.org/pages/about/</loc>
+    <loc>https://leopoldgoedhart.com/pages/about/</loc>
     <lastmod>2023-03-13T22:01:29+01:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/</loc>
+    <loc>https://leopoldgoedhart.com/posts/</loc>
     <lastmod>2023-03-13T21:38:40+01:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/20230313_ultimate_way_to_read_textbooks/</loc>
+    <loc>https://leopoldgoedhart.com/posts/20230313_ultimate_way_to_read_textbooks/</loc>
     <lastmod>2023-03-13T21:38:40+01:00</lastmod>
   </url><url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://leopoldgoedhart.com/categories/</loc>
   </url><url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://leopoldgoedhart.com/tags/</loc>
   </url>
 </urlset>
