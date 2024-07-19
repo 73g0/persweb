@@ -36,20 +36,21 @@ h2 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 800px;
     text-align: center;
-    margin: 100px;
+    margin: 100px auto;
 }
 
 .profile {
     display: flex;
+    flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
 }
 
 .profile-image {
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .profile-info h1 {
@@ -58,13 +59,15 @@ h2 {
 }
 
 .timeline-image {
-    max-width: 200px;
+    max-width: 100px;
     height: auto;
     margin-bottom: 20px;
 }
 
 .socials {
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .btn {
@@ -102,7 +105,7 @@ h2 {
 
 .container-sub {
     background-color: white;
-    padding: 50px;
+    padding: 30px;
     border-radius: 10px;
     margin-top: 25px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -116,4 +119,64 @@ footer {
     background-color: white;
     color: #333;
     text-align: center;
+}
+
+/* Media Queries */
+@media (min-width: 601px) and (max-width: 900px) {
+    .container {
+        padding: 30px;
+        margin: 50px auto;
+    }
+
+    .profile-image {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .timeline-image {
+        max-width: 150px;
+    }
+
+    .container-sub {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .profile {
+        flex-direction: column;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+
+    .socials {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+    }
+
+    .timeline-image {
+        max-width: 100px;
+    }
+
+    .container-sub {
+        padding: 20px;
+        margin-top: 15px;
+    }
 }
