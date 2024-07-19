@@ -1,0 +1,119 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    line-height: 1.4;
+    background-color: white;
+    color: #333;
+}
+
+h1 {
+    font-size: 34px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    font-weight: normal;
+    font-style: italic;
+    color: #999;
+    font-size: 18px;
+    padding: 0;
+    margin: 5px 0 10px 0;
+}
+
+.container {
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: center;
+    margin: 100px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-info h1 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.timeline-image {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.socials {
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: #333;
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    transition: background-color 0.3s;
+}
+
+.btn.email {
+    background-image: url('static/email.svg');
+}
+
+.btn.cv {
+    background-image: url('static/cv.svg');
+}
+
+.btn.linkedin {
+    background-image: url('static/linkedin.svg');
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.timeline {
+    margin-top: 50px;
+}
+
+.container-sub {
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+    margin-top: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: center;
+}
+
+footer {
+    padding: 10px 0;
+    width: 100%;
+    background-color: white;
+    color: #333;
+    text-align: center;
+}
