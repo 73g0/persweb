@@ -27,3 +27,8 @@ a:focus, a:hover {
     text-decoration: underline;
     transition:all .2s ease-in-out
 }
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+}
