@@ -31,4 +31,5 @@ a:focus, a:hover {
 footer {
     margin-top: 40px;
     text-align: center;
+    position: fixed;
 }
