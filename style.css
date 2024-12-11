@@ -32,8 +32,14 @@ footer {
     text-align: center;
 }
 
+.arrow-item {
+    list-style-type: none; /* Remove default bullet point for this item */
+    position: relative; /* Position relative for pseudo-element */
+}
+
 .arrow-item::before {
-    content: "->";
-    padding-right: 8px;
-    color: #000;
+    content: "→"; /* Unicode for right arrow */
+    position: absolute; /* Position the arrow */
+    left: -20px; /* Adjust position to align with bullets */
+    color: #000; /* Arrow color */
 }
