@@ -31,9 +31,3 @@ footer {
     margin-top: 40px;
     text-align: center;
 }
-
-.multi-line-bullet {
-    display: list-item;
-    list-style-position: inside;
-    padding-left: 20px; /* Adjust as needed */
-}
