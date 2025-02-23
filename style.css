@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
 
 body {
     margin: 40px auto;
@@ -8,11 +8,11 @@ body {
     color: #444;
     padding: 0 10px;
     background-color: #EEEEEE;
-    font-family: 'Sofia Sans', sans-serif;
+    font-family: 'inter-400', sans-serif;
 }
 
-.sofia-sans-400 {
-    font-family: "Sofia Sans", serif;
+.inter-400 {
+    font-family: "Inter", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
