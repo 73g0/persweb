@@ -1,12 +1,27 @@
+html,
 body {
-    margin: 40px auto;
-    max-width: 600px;
-    line-height: 1.6;
-    font-size: 18px;
-    color: #444;
-    padding: 0 10px;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: #EEEEEE;
     font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Main content container with your original styling */
+main {
+    flex: 1 0 auto;
+    max-width: 600px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 0 10px;
 }
 
 h1,
@@ -28,7 +43,18 @@ a:hover {
     transition: all .2s ease-in-out
 }
 
+/* Horizontal rule styling */
+hr {
+    max-width: 600px;
+    margin: 0 auto;
+    flex-shrink: 0;
+}
+
 footer {
-    margin-top: 40px;
+    flex-shrink: 0;
     text-align: center;
+    padding: 20px 10px 40px 10px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
 }
