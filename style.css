@@ -8,7 +8,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #EEEEEE;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     color: #444;
@@ -37,7 +36,8 @@ a {
 
 a:focus,
 a:hover {
-    color: #0057b7;
+    /* color: #0057b7; */
+    color: #004225;
     cursor: pointer;
     text-decoration: underline;
     transition: all .2s ease-in-out
