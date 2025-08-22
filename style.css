@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html,
 body {
     height: 100%;
@@ -13,6 +17,7 @@ body {
     background-color: #F0EAD6;
     color: #444;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 main {
@@ -21,6 +26,7 @@ main {
     width: 100%;
     margin: 40px auto;
     padding: 0 10px;
+    box-sizing: border-box;
 }
 
 h1,
@@ -55,4 +61,5 @@ footer {
     max-width: 600px;
     width: 100%;
     margin: 0 auto;
+    box-sizing: border-box;
 }
