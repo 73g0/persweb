@@ -10,11 +10,11 @@ body {
     min-height: 100vh;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
+    background-color: #F0EAD6;
     color: #444;
     line-height: 1.6;
 }
 
-/* Main content container with your original styling */
 main {
     flex: 1 0 auto;
     max-width: 600px;
@@ -36,14 +36,12 @@ a {
 
 a:focus,
 a:hover {
-    /* color: #0057b7; */
-    color: #004225;
+    color: #0057b7;
     cursor: pointer;
     text-decoration: underline;
     transition: all .2s ease-in-out
 }
 
-/* Horizontal rule styling */
 hr {
     max-width: 600px;
     margin: 0 auto;
