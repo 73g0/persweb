@@ -33,7 +33,6 @@ body {
     color: var(--text);
     font: 18px/1.6 "Crimson Pro", serif;
     overflow: auto;
-    /* normal scrollbar on the right */
 }
 
 .wrapper {
@@ -44,7 +43,6 @@ body {
     grid-template-columns: var(--sidebar-width) 1fr;
     column-gap: var(--gutter);
     align-items: start;
-    /* top-align LHS and RHS */
 }
 
 /* Left column (profile) */
@@ -77,9 +75,7 @@ body {
     font-family: "Crimson Pro", serif;
 }
 
-/* Role & brand should look like the uni lines (h3) */
-.role,
-.brand {
+.role {
     margin: 0 0 6px;
     font-size: 1.08rem;
     line-height: 1.3;
@@ -87,7 +83,6 @@ body {
     font-family: "Ubuntu Mono", monospace;
 }
 
-/* Keep email simple below */
 .email {
     margin: 0 0 6px;
 }
@@ -119,7 +114,6 @@ p {
     font-family: "Crimson Pro", serif;
 }
 
-/* Links — unified behavior everywhere */
 a {
     color: var(--link);
     /* #39c */
@@ -135,8 +129,6 @@ a:focus {
 a:visited {
     color: var(--link);
 }
-
-/* keep same color after visit */
 
 /* Education list */
 .education-entry {
