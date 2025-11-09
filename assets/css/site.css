@@ -6,11 +6,11 @@
 :root {
     --sidebar-width: 300px;
     --gutter: 48px;
-    --edge: 24px;
+    --edge: 64px;
     --content-max: 780px;
 
     --text: #595959;
-    --text-strong: #000;
+    --text-strong: #043361;
     --h1: #043361;
     --link: #39c;
 }
@@ -31,7 +31,7 @@ body {
     margin: 0;
     background: #fff;
     color: var(--text);
-    font: 16px/1.5 "Crimson Pro", serif;
+    font: 18px/1.6 "Crimson Pro", serif;
     overflow: auto;
 }
 
