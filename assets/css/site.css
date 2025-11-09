@@ -131,11 +131,11 @@ a:visited {
 }
 
 /* Education list */
-.education-entry {
+.entry {
     margin: 14px 0 16px;
 }
 
-.education-entry .date {
+.entry .date {
     color: #7a7a7a;
 }
 
