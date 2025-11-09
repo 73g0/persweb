@@ -1,60 +1,128 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Leopold Goedhart</title>
+<html lang="en-US">
 
-  <!-- Fonts + Layout -->
-  <link rel="stylesheet" href="font.css">
-  <link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="utf-8" />
+  <title>Your Name | Your Institution</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Personal homepage of Your Name" />
+
+  <!-- Styles (no JS, no analytics) -->
+  <link rel="stylesheet" href="assets/css/site.css" />
 </head>
 
 <body>
   <div class="wrapper">
+    <!-- Left column: pinned -->
+    <header class="sidebar" aria-label="Profile">
+      <a class="image avatar">
+        <img src="assets/img/your-portrait.jpg" alt="Portrait of Your Name" />
+      </a>
 
-    <header id="header">
-      <span class="image avatar">
-        <img src="Images/placeholder.jpg" alt="Leopold Goedhart">
-      </span>
-      <h1>Leopold Goedhart</h1>
-      <email><a href="mailto:leopold@example.com">leopold@example.com</a></email>
+      <h1 class="name">Your<br />Name</h1>
+
+      <p class="role">Your Title (e.g., Ph.D. Candidate)</p>
+      <p class="brand"><a href="#" rel="noopener">Your Institution</a></p>
+      <p class="email">you@example.com</p>
     </header>
 
-    <section>
-      <h1>About Me</h1>
-      <p>[Write your short About Me here – 3–4 sentences.]</p>
+    <!-- Right column: independently scrollable -->
+    <main class="content" role="main">
+      <section>
 
-      <h1>Work</h1>
-      <div class="education-entry">
-        <h3>Antin Infrastructure Partners</h3>
-        <p>Private Equity Intern (2025)</p>
-      </div>
-      <div class="education-entry">
-        <h3>BBA Capital Partners</h3>
-        <p>Private Equity Intern (2023)</p>
-      </div>
-      <div class="education-entry">
-        <h3>Houlihan Lokey</h3>
-        <p>M&amp;A Intern (2022)</p>
-      </div>
+        <h2 id="about-me">About Me</h2>
+        <p>
+          Write 2–3 sentences about yourself here. Summarize your research or professional focus,
+          your group or advisor (if applicable), and what problems excite you.
+        </p>
+        <p>
+          Add one more line with current affiliations, fellowships, or interests. Keep it concise.
+        </p>
 
-      <h1>Education</h1>
-      <div class="education-entry">
-        <h3>Imperial College London</h3>
-        <p>MSc Mathematics &amp; Finance (2024–2026)</p>
-      </div>
-      <div class="education-entry">
-        <h3>ETH Zürich</h3>
-        <p>BSc Physics (2020–2024)</p>
-      </div>
+        <h2 id="education">Education</h2>
 
-      <h1>Miscellaneous</h1>
-      <ul>
-        <li>Music — producer &amp; DJ (“Poldus”)</li>
-      </ul>
-    </section>
+        <div class="education-entry">
+          <h3>University / Organization <span class="date"> YYYY – YYYY </span></h3>
+          <p>Degree / Role (e.g., Ph.D. in X; GPA / honors as desired).</p>
+        </div>
 
+        <div class="education-entry">
+          <h3>University / Organization <span class="date"> YYYY – YYYY </span></h3>
+          <p>B.Sc. / M.Sc. in Y (Distinction / Honors if desired).</p>
+        </div>
+
+        <h2 id="news">News</h2>
+        <ul class="news">
+          <li><strong>[MMM DD, YYYY]</strong> Short one‑line update about a talk, paper, award, or event.</li>
+          <li><strong>[MMM DD, YYYY]</strong> Another update with a link to <a href="#">something relevant</a>.</li>
+          <li><strong>[MMM DD, YYYY]</strong> Keep items brief; newest first.</li>
+        </ul>
+
+        <h2 id="publications" style="margin: 2px 0 -15px;">Publications</h2>
+
+        <div class="publications">
+          <ol class="bibliography">
+
+            <li>
+              <div class="pub-row">
+                <div class="col-sm-3 abbr"></div>
+                <div class="col-sm-9">
+                  <div class="title"><b>Paper Title Goes Here</b></div>
+                  <div class="author">
+                    Your Name,
+                    <a href="#">Co‑author Name</a>,
+                    <a href="#">Co‑author Name</a>
+                  </div>
+                  <div class="periodical"><em>Venue / Status, Year</em></div>
+                  <div class="links">
+                    <a href="#" class="btn btn-sm z-depth-0" target="_blank" rel="noopener">Abstract</a>
+                    <a href="#" class="btn btn-sm z-depth-0" target="_blank" rel="noopener">PDF</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <br />
+
+            <li>
+              <div class="pub-row">
+                <div class="col-sm-3 abbr"></div>
+                <div class="col-sm-9">
+                  <div class="title"><b>Another Publication Title</b></div>
+                  <div class="author">
+                    <a href="#">Co‑author Name</a>, Your Name
+                  </div>
+                  <div class="periodical"><em>Preprint, YYYY</em></div>
+                  <div class="links">
+                    <a href="#" class="btn btn-sm z-depth-0" target="_blank" rel="noopener">Abstract</a>
+                    <a href="#" class="btn btn-sm z-depth-0" target="_blank" rel="noopener">PDF</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <br />
+
+            <li>
+              <div class="pub-row">
+                <div class="col-sm-3 abbr"></div>
+                <div class="col-sm-9">
+                  <div class="title"><b>Third Title (Optional)</b></div>
+                  <div class="author">Your Name et al.</div>
+                  <div class="periodical"><em>Journal / Conference, YYYY</em></div>
+                  <div class="links">
+                    <a href="#" class="btn btn-sm z-depth-0" target="_blank" rel="noopener">Abstract</a>
+                    <a href="#" class="btn btn-sm z-depth-0" target="_blank" rel="noopener">PDF</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+          </ol>
+        </div>
+
+      </section>
+    </main>
   </div>
 </body>
+
 </html>

@@ -1,0 +1,218 @@
+/* === Fonts (same families as your template) === */
+/* Source: your uploaded font.css (Crimson Pro + Ubuntu Mono) */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+/* === Theme variables === */
+:root {
+    --sidebar-width: 300px;
+    --gutter: 48px;
+    --edge: 24px;
+    --content-max: 780px;
+
+    --text: #595959;
+    /* matches your template body color */
+    --text-strong: #000000;
+    --link: #0645ad;
+    --theme: #002D72;
+    /* publications.css theme color */
+    --muted: #7a7a7a;
+    --bg: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.5 "Crimson Pro", serif;
+    /* same as your font.css */
+    font-weight: 400;
+    overflow: hidden;
+    /* desktop: only RHS scrolls */
+}
+
+/* === Two-column frame === */
+.wrapper {
+    position: relative;
+    height: 100vh;
+    padding: var(--edge);
+}
+
+/* --- Left column (pinned) --- */
+.sidebar {
+    position: fixed;
+    top: var(--edge);
+    left: var(--edge);
+    width: var(--sidebar-width);
+}
+
+.image.avatar img {
+    width: 168px;
+    height: 168px;
+    border-radius: 50%;
+    display: block;
+    object-fit: cover;
+}
+
+.name {
+    margin: 12px 0 6px;
+    font-weight: 700;
+    line-height: 1.15;
+    font-size: 1.85rem;
+    color: var(--text-strong);
+}
+
+.role,
+.brand,
+.email {
+    margin: 0 0 6px;
+}
+
+.brand a {
+    color: var(--theme);
+    text-decoration: none;
+}
+
+.brand a:hover {
+    text-decoration: underline;
+}
+
+/* --- Right column (independent scroll) --- */
+.content {
+    position: absolute;
+    top: var(--edge);
+    left: calc(var(--edge) + var(--sidebar-width) + var(--gutter));
+    right: var(--edge);
+    bottom: var(--edge);
+    overflow-y: auto;
+    max-width: var(--content-max);
+}
+
+/* === Typography & links === */
+h2 {
+    margin: 0 0 12px;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    color: var(--text-strong);
+}
+
+h3 {
+    margin: 0 0 6px;
+    font-size: 1.08rem;
+    line-height: 1.3;
+    color: var(--text-strong);
+}
+
+p {
+    margin: 0 0 12px;
+}
+
+a {
+    color: var(--link);
+    text-underline-offset: 2px;
+}
+
+/* === Education === */
+.education-entry {
+    margin: 14px 0 16px;
+}
+
+.education-entry .date {
+    color: var(--muted);
+}
+
+/* === News === */
+.news {
+    margin: 0 0 20px 1.2rem;
+    padding: 0;
+}
+
+.news li+li {
+    margin-top: 6px;
+}
+
+.news strong {
+    color: var(--text-strong);
+}
+
+/* === Publications (adapted from your publications.css) === */
+:root {
+    --global-bg-color: #ffffff;
+    --global-text-color: #000000;
+    --global-theme-color: #002D72;
+}
+
+.publications {
+    margin-top: 2rem;
+}
+
+.publications h2 {
+    margin-bottom: 1rem;
+}
+
+.publications ol.bibliography {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+.publications ol.bibliography li {
+    min-height: 110px;
+    margin-bottom: 0.5rem;
+}
+
+.publications ol.bibliography li .abbr {
+    height: 8rem;
+    margin-bottom: 0.5rem;
+}
+
+.publications ol.bibliography li .title {
+    font-weight: bolder;
+}
+
+.publications ol.bibliography li .author a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+.publications ol.bibliography li .links a.btn {
+    color: #000;
+    border: 1px solid #000;
+    padding: 0.1rem 0.5rem;
+    text-decoration: none;
+}
+
+.publications ol.bibliography li .links a.btn:hover {
+    color: var(--global-theme-color);
+    border-color: var(--global-theme-color);
+}
+
+/* === Responsive: stack columns on small screens === */
+@media (max-width: 880px) {
+    body {
+        overflow: auto;
+    }
+
+    /* mobile: page scrolls as a whole */
+    .sidebar {
+        position: static;
+        width: auto;
+        margin-bottom: 12px;
+    }
+
+    .content {
+        position: static;
+        max-width: 60ch;
+    }
+}
