@@ -153,33 +153,38 @@ a:visited {
     color: var(--text-strong);
 }
 
-/* Mobile: stack columns */
 @media (max-width: 880px) {
     .wrapper {
         display: block;
         padding: 16px;
+        text-align: center;
     }
 
-    .wrapper>header.sidebar {
+    .sidebar {
         position: static;
-        width: auto;
+        display: inline-block;
+        width: fit-content;
         margin: 0 auto 12px;
         text-align: center;
         max-width: 480px;
-        display: block;
     }
 
-    .sidebar .name,
-    .sidebar .role,
-    .sidebar .brand,
-    .sidebar .email {
+    .sidebar h1,
+    .sidebar p,
+    .sidebar a {
+        text-align: center !important;
         display: block;
         margin: 0 auto 6px;
-        text-align: center;
     }
 
     .image.avatar img {
         display: block;
         margin: 0 auto;
+    }
+
+    .content {
+        max-width: 60ch;
+        margin: 0 auto;
+        text-align: left;
     }
 }
