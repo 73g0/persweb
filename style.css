@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: "Crimson Pro", serif;
+    font-size: 18px;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #000;
+}
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+}
+
+#header {
+    width: 232px;
+    padding: 40px 0;
+    text-align: center;
+    position: fixed;
+}
+
+#header .image.avatar {
+    display: inline-block;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+
+#header .image.avatar img {
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#header h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 0.4em;
+}
+
+#header email a {
+    font-family: "Ubuntu Mono", monospace;
+    text-decoration: none;
+    color: inherit;
+}
+
+section {
+    margin-left: 300px;
+    max-width: 650px;
+    padding: 40px 0;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-top: 2em;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.3em;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 1.05em;
+    margin-bottom: 0.1em;
+}
+
+.education-entry {
+    margin-bottom: 1.2em;
+}
+
+ul {
+    margin-top: 0.5em;
+    padding-left: 1.2em;
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #header {
+        position: relative;
+        width: auto;
+        padding: 20px 0;
+    }
+
+    section {
+        margin-left: 0;
+        padding: 20px;
+    }
+}

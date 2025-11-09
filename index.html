@@ -2,79 +2,62 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Leopold Goedhart</title>
-    <style>
-        /* minimal, classless look */
-        body {
-            margin: 24px;
-            font-family: serif;
-            line-height: 1.6;
-            color: #000;
-            background: #fff;
-        }
 
-        main {
-            max-width: 720px;
-            margin: 0 auto;
-        }
-
-        h1 {
-            margin: 0 0 .25rem;
-            font-size: 2rem;
-        }
-
-        h2 {
-            margin: 1.5rem 0 .5rem;
-            font-size: 1.25rem;
-        }
-
-        h3 {
-            margin: 1rem 0 .25rem;
-            font-size: 1rem;
-        }
-
-        ul {
-            padding-left: 1.2rem;
-            margin: .25rem 0 .75rem;
-        }
-
-        a {
-            color: inherit;
-        }
-    </style>
+    <!-- Fonts + Layout -->
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <main>
-        <h1>Your Name</h1>
+    <div class="wrapper">
 
-        <section id="about">
+        <header id="header">
+            <span class="image avatar">
+                <img src="Images/me.jpg" alt="Me">
+            </span>
+            <h1>Leopold Goedhart</h1>
+            <email><a href="mailto:leopoldgoedhart@gmail.com">leopoldgoedhart@gmail.com</a></email>
+        </header>
+
+        <section>
             <h2>About Me</h2>
-            <p>I am an intern at <a href="/">AIP</a>.</p>
-        </section>
+            <p>[Write your short About Me here -- 3-4 sentences describing who you are, what you study, and your
+                interests.]</p>
 
-        <section id="work">
             <h2>Work</h2>
-            <h3>Antin</h3>
-            <h3>BBA</h3>
-            <h3>Houlihan</h3>
-        </section>
+            <div class="education-entry">
+                <h3>Antin Infrastructure Partners</h3>
+                <p>Private Equity Intern (2025)</p>
+            </div>
+            <div class="education-entry">
+                <h3>BBA Capital Partners</h3>
+                <p>Private Equity Intern (2023)</p>
+            </div>
+            <div class="education-entry">
+                <h3>Houlihan Lokey</h3>
+                <p>M&amp;A Intern (2022)</p>
+            </div>
 
-        <section id="education">
             <h2>Education</h2>
-            <h3>Imperial</h3>
-            <h3>ETH</h3>
-        </section>
+            <div class="education-entry">
+                <h3>Imperial College London</h3>
+                <p>MSc Mathematics &amp; Finance (2024--2026)</p>
+            </div>
+            <div class="education-entry">
+                <h3>ETH Zürich</h3>
+                <p>BSc Physics (2020--2024)</p>
+            </div>
 
-        <section id="misc">
             <h2>Miscellaneous</h2>
             <ul>
-                <li>Music</li>
+                <li>Music -- producer &amp; DJ (“Poldus”)</li>
             </ul>
         </section>
-    </main>
+
+    </div>
 </body>
 
 </html>
