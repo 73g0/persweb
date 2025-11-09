@@ -160,14 +160,16 @@ a:visited {
         padding: 16px;
     }
 
-    .wrapper>header,
+    /* Center the left column on mobile */
     .sidebar {
         position: static;
-        text-align: left;
-        margin-bottom: 12px;
+        margin: 0 auto 12px;
+        text-align: center;
+        max-width: 480px;
     }
 
-    .content {
-        max-width: 60ch;
+    .image.avatar img {
+        display: block;
+        margin: 0 auto;
     }
 }
