@@ -160,12 +160,22 @@ a:visited {
         padding: 16px;
     }
 
-    /* Center the left column on mobile */
-    .sidebar {
+    .wrapper>header.sidebar {
         position: static;
+        width: auto;
         margin: 0 auto 12px;
         text-align: center;
         max-width: 480px;
+        display: block;
+    }
+
+    .sidebar .name,
+    .sidebar .role,
+    .sidebar .brand,
+    .sidebar .email {
+        display: block;
+        margin: 0 auto 6px;
+        text-align: center;
     }
 
     .image.avatar img {
