@@ -1,50 +1,80 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    <title>Leopold Gregor Goedhart</title>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Leopold Goedhart</title>
+    <style>
+        /* minimal, classless look */
+        body {
+            margin: 24px;
+            font-family: serif;
+            line-height: 1.6;
+            color: #000;
+            background: #fff;
+        }
+
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            margin: 0 0 .25rem;
+            font-size: 2rem;
+        }
+
+        h2 {
+            margin: 1.5rem 0 .5rem;
+            font-size: 1.25rem;
+        }
+
+        h3 {
+            margin: 1rem 0 .25rem;
+            font-size: 1rem;
+        }
+
+        ul {
+            padding-left: 1.2rem;
+            margin: .25rem 0 .75rem;
+        }
+
+        a {
+            color: inherit;
+        }
+    </style>
 </head>
 
 <body>
     <main>
-        <header>
-            <h1 style="text-align: center; margin-bottom: 0.5rem;">
-                Leopold Gregor Goedhart
-            </h1>
-            <em style="display: block; text-align: center; margin-bottom: 0.5rem;">
-                Passionately curious...
-            </em>
-            <nav style="text-align: center; margin-bottom: 0.5rem;">
-                <a href="static/profile1.jpg">Me</a> |
-                <a href="https://www.linkedin.com/in/leopold-goedhart">LinkedIn</a>
-            </nav>
-        </header>
+        <h1>Your Name</h1>
 
-        <h2>Present</h2>
-        <ul>
-            <li><b>Private Equity</b> @ <a href="https://www.antin-ip.com">Antin Infrastructure Partners</a>.</li>
-        </ul>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am an intern at <a href="/">AIP</a>.</p>
+        </section>
 
-        <h2>Past</h2>
-        <ul>
-            <li><b>Private Equity</b> @ <a href="https://bba-partners.de/en/home/">BBA CapitalPartners</a>.</li>
-            <li><b>Investment Banking</b> @ <a href="https://hl.com">Houlihan Lokey</a>.</li>
-            <li><b>MSc in Mathematics and Finance</b> @ <a href="https://www.imperial.ac.uk">Imperial College London</a>.</li>
-            <li><b>BSc in Physics</b> @ <a href="https://ethz.ch/de.html">ETH Zürich</a>.</li>
-        </ul>
+        <section id="work">
+            <h2>Work</h2>
+            <h3>Antin</h3>
+            <h3>BBA</h3>
+            <h3>Houlihan</h3>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <h3>Imperial</h3>
+            <h3>ETH</h3>
+        </section>
+
+        <section id="misc">
+            <h2>Miscellaneous</h2>
+            <ul>
+                <li>Music</li>
+            </ul>
+        </section>
     </main>
-
-    <footer>
-        <p>&copy;2025 Leopold Gregor Goedhart. All rights reserved.</p>
-    </footer>
 </body>
 
 </html>
