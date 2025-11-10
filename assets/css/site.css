@@ -1,8 +1,6 @@
-/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,500;1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
-/* Theme */
 :root {
     --sidebar-width: 300px;
     --gutter: 48px;
@@ -15,7 +13,6 @@
     --link: #39c;
 }
 
-/* Base */
 *,
 *::before,
 *::after {
@@ -45,15 +42,12 @@ body {
     align-items: start;
 }
 
-/* Left column (profile) */
-.wrapper>header,
 .sidebar {
     position: sticky;
     top: var(--edge);
     text-align: center;
 }
 
-/* Avatar */
 .image.avatar img {
     width: 168px;
     height: 168px;
@@ -63,7 +57,6 @@ body {
     margin: 0 auto;
 }
 
-/* Name (site title) */
 .name,
 .wrapper>header h1 {
     margin: 12px 0 6px;
@@ -71,11 +64,11 @@ body {
     line-height: 1.15;
     font-weight: 700;
     color: var(--h1);
-    /* #043361 */
     font-family: "Crimson Pro", serif;
 }
 
-.role {
+.role,
+.brand {
     margin: 0 0 6px;
     font-size: 1.08rem;
     line-height: 1.3;
@@ -87,12 +80,10 @@ body {
     margin: 0 0 6px;
 }
 
-/* Right column (content) */
 .content {
     max-width: var(--content-max);
 }
 
-/* Headings & text */
 h2 {
     margin: 0 0 12px;
     font-size: 1.4rem;
@@ -116,7 +107,6 @@ p {
 
 a {
     color: var(--link);
-    /* #39c */
     text-decoration: none;
     text-underline-offset: 2px;
 }
@@ -130,7 +120,6 @@ a:visited {
     color: var(--link);
 }
 
-/* Education list */
 .entry {
     margin: 14px 0 16px;
 }
@@ -139,7 +128,6 @@ a:visited {
     color: #7a7a7a;
 }
 
-/* Misc list */
 .misc {
     margin: 0 0 20px 1.2rem;
     padding: 0;
@@ -157,24 +145,17 @@ a:visited {
     .wrapper {
         display: block;
         padding: 16px;
-        text-align: center;
     }
 
+    .wrapper>header.sidebar,
     .sidebar {
         position: static;
-        display: inline-block;
-        width: fit-content;
-        margin: 0 auto 12px;
-        text-align: center;
-        max-width: 480px;
-    }
-
-    .sidebar h1,
-    .sidebar p,
-    .sidebar a {
-        text-align: center !important;
+        top: auto;
         display: block;
-        margin: 0 auto 6px;
+        width: 100%;
+        max-width: none;
+        margin: 0 0 12px;
+        text-align: center;
     }
 
     .image.avatar img {
