@@ -1,6 +1,7 @@
 body {
   font-family: Helvetica;
-  font-size: 13px;
+  font-size: 16px;
+  margin: 20px;
 }
 
 #menu {
@@ -44,6 +45,7 @@ body {
   margin-top: 15px;
   float: left;
   width: 500px;
+  max-width: 100%;
 }
 
 #content h1, #content h2, #content h3 {
@@ -56,13 +58,18 @@ body {
 }
 
 #content .byline, #content .byline a, #content .note {
-  font-size: 10px;
+  font-size: 12px;
   color: #aaa;
 }
 
 #content p, #content ul {
   color: #333;
-  line-height: 18px;
+  line-height: 1.5;
+}
+
+#content img {
+  max-width: 100%;
+  height: auto;
 }
 
 #content sup.note {
@@ -102,4 +109,31 @@ sup, sub {
 }
 sub {
   top: 0.4em;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 16px;
+  }
+  #menu {
+    float: none;
+    margin: 0 0 16px 0;
+    text-align: left;
+    width: auto;
+  }
+  #menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+    margin-top: 6px;
+  }
+  #left {
+    display: none;
+  }
+  #content {
+    float: none;
+    width: auto;
+    max-width: 100%;
+    margin-top: 8px;
+  }
 }
