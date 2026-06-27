@@ -1,16 +1,13 @@
+/* Mobile-first base styles */
 body {
   font-family: Helvetica;
   font-size: 16px;
-  margin: 20px;
+  margin: 16px;
 }
 
 #menu {
-  float: right;
-  margin-top: 30px;
-  margin-right: 20px;
-  text-align: right;
-  width: 150px;
   font-family: "Myriad Pro", "Helvetica Neue", Helvetica;
+  margin-bottom: 16px;
 }
 
 #menu .title {
@@ -18,8 +15,11 @@ body {
 
 #menu ul {
   list-style-type: none;
-  margin: 0;
+  margin: 6px 0 0 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 18px;
 }
 
 #menu li {
@@ -28,24 +28,16 @@ body {
 #menu li a {
   display: inline-block;
   color: #0864c7;
+  padding: 4px 0;
 }
 
 #left {
-  height: 1px;
-  float: left;
-  display: block;
-  min-width: 0;
-  overflow: hidden;
-  width: 200px;
-  margin: 0;
-  padding: 0;
+  display: none;
 }
 
 #content {
-  margin-top: 15px;
-  float: left;
-  width: 500px;
-  max-width: 100%;
+  margin-top: 8px;
+  max-width: 500px;
 }
 
 #content h1, #content h2, #content h3 {
@@ -111,29 +103,38 @@ sub {
   top: 0.4em;
 }
 
-@media (max-width: 768px) {
+/* Desktop: side-by-side layout (menu right, content left) */
+@media (min-width: 900px) {
   body {
-    margin: 16px;
+    margin: 20px;
   }
   #menu {
-    float: none;
-    margin: 0 0 16px 0;
-    text-align: left;
-    width: auto;
+    float: right;
+    margin: 30px 20px 0 0;
+    text-align: right;
+    width: 150px;
   }
   #menu ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px 18px;
-    margin-top: 6px;
+    display: block;
+    margin: 0;
+    gap: 0;
+  }
+  #menu li a {
+    padding: 0;
   }
   #left {
-    display: none;
+    display: block;
+    float: left;
+    height: 1px;
+    min-width: 0;
+    overflow: hidden;
+    width: 200px;
+    margin: 0;
+    padding: 0;
   }
   #content {
-    float: none;
-    width: auto;
-    max-width: 100%;
-    margin-top: 8px;
+    float: left;
+    margin-top: 15px;
+    width: 500px;
   }
 }
