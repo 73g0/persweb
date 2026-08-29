@@ -1,30 +1,83 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="/static/style.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home · Leopold Goedhart</title>
+  <title>Leopold Goedhart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: "Cormorant SC", Georgia, serif;
+      font-size: 20px;
+      line-height: 1.6;
+      color: #222;
+      background: #fff;
+      margin: 0;
+      padding: 60px 20px;
+    }
+
+    .container {
+      max-width: 540px;
+      margin: 0 auto;
+    }
+
+    .profile {
+      display: block;
+      width: 180px;
+      height: 180px;
+      margin: 0 auto;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: 32px;
+      text-align: center;
+      margin: 28px 0 32px;
+    }
+
+    p {
+      text-align: left;
+      margin: 0;
+    }
+
+    a {
+      color: #0864c7;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        font-size: 18px;
+        padding: 40px 20px;
+      }
+      .profile {
+        width: 150px;
+        height: 150px;
+      }
+      h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
 </head>
 <body>
-<div id="menu">
-<span class="title">Leopold Goedhart</span>
-<ul>
-  <li><a href="/about">About</a></li>
-  <li><a href="/advice">Advice</a></li>
-  <li><a href="/questions">Questions</a></li>
-  <li><a href="/links">Links</a></li>
-</ul>
-</div>
-<div id="left">&nbsp;</div>
-<div id="content">
+  <div class="container">
+    <img class="profile" src="static/profile.jpg" alt="Leopold Goedhart">
 
-</div>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0B0HR2EZYV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-0B0HR2EZYV');
-</script>
+    <h1>Leopold Goedhart</h1>
+
+    <p>I currently live in Munich and work at <a href="https://eqtgroup.com/">EQT Partners</a>. I grew up in Germany and previously studied Physics at <a href="https://ethz.ch/en.html">ETH Zürich</a> and Mathematics &amp; Finance at <a href="https://www.imperial.ac.uk/">Imperial College London</a>.</p>
+  </div>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0B0HR2EZYV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0B0HR2EZYV');
+  </script>
 </body>
 </html>
