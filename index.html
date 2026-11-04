@@ -4,16 +4,48 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Leopold Goedhart</title>
+  <script>
+    try {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <style>
+    :root {
+      color-scheme: light;
+      --text: #222;
+      --bg: #fff;
+      --muted: #555;
+      --link: #0864c7;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        color-scheme: dark;
+        --text: #e2e2e2;
+        --bg: #161616;
+        --muted: #9a9a9a;
+        --link: #6aa8f0;
+      }
+    }
+
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+      --text: #e2e2e2;
+      --bg: #161616;
+      --muted: #9a9a9a;
+      --link: #6aa8f0;
+    }
+
     body {
       font-family: "Cormorant Garamond", Georgia, serif;
       font-size: 20px;
       line-height: 1.6;
-      color: #222;
-      background: #fff;
+      color: var(--text);
+      background: var(--bg);
       margin: 0;
       padding: 60px 20px;
     }
@@ -47,12 +79,24 @@
     .quote {
       font-style: italic;
       text-align: center;
-      color: #555;
+      color: var(--muted);
       margin: 0 0 32px;
     }
 
     a {
-      color: #0864c7;
+      color: var(--link);
+    }
+
+    .theme-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 4px;
+      border: 0;
+      background: none;
+      color: var(--muted);
+      cursor: pointer;
+      line-height: 0;
     }
 
     @media (max-width: 600px) {
@@ -71,6 +115,13 @@
   </style>
 </head>
 <body>
+  <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+    <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+      <circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.2"/>
+      <path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/>
+    </svg>
+  </button>
+
   <div class="container">
     <img class="profile" src="static/profile.jpg" alt="Leopold Goedhart">
 
@@ -80,6 +131,18 @@
 
     <p>I grew up in Germany and previously studied Physics at <a href="https://ethz.ch/en.html">ETH Zürich</a> and Quant Finance at <a href="https://www.imperial.ac.uk/">Imperial College London</a>.</p>
   </div>
+
+  <script>
+    document.querySelector('.theme-toggle').addEventListener('click', function () {
+      var root = document.documentElement;
+      var dark = root.dataset.theme
+        ? root.dataset.theme === 'dark'
+        : matchMedia('(prefers-color-scheme: dark)').matches;
+      var next = dark ? 'light' : 'dark';
+      root.dataset.theme = next;
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+  </script>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0B0HR2EZYV"></script>
   <script>
