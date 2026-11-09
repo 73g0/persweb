@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leopold Goedhart</title>
+  <meta name="description" content="I currently live in Germany, where I was also born, and previously studied Physics at ETH Zürich and Quant Finance at Imperial College London.">
+  <meta property="og:title" content="Leopold Goedhart">
+  <meta property="og:description" content="I currently live in Germany, where I was also born, and previously studied Physics at ETH Zürich and Quant Finance at Imperial College London.">
+  <meta property="og:image" content="https://leopold.gg/static/profile.jpg">
+  <meta name="twitter:card" content="summary">
+  <link rel="preload" href="static/fonts/cormorant-garamond.woff2" as="font" type="font/woff2" crossorigin>
+  <style>
+    @font-face {
+      font-family: "Cormorant Garamond";
+      font-style: normal;
+      font-weight: 400 700;
+      font-display: swap;
+      src: url(static/fonts/cormorant-garamond.woff2) format("woff2");
+    }
+
+    @font-face {
+      font-family: "Cormorant Garamond";
+      font-style: italic;
+      font-weight: 400;
+      font-display: swap;
+      src: url(static/fonts/cormorant-garamond-italic.woff2) format("woff2");
+    }
+
+    body {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 20px;
+      line-height: 1.6;
+      color: #222;
+      background: #fff;
+      margin: 0;
+      padding: 60px 20px;
+    }
+
+    .container {
+      max-width: 470px;
+      margin: 0 auto;
+    }
+
+    .profile {
+      display: block;
+      width: 180px;
+      height: 180px;
+      margin: 0 auto;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: 32px;
+      text-align: center;
+      margin: 28px 0 4px;
+    }
+
+    p {
+      text-align: left;
+      margin: 0;
+    }
+
+    .quote {
+      font-style: italic;
+      text-align: center;
+      color: #555;
+      margin: 0 0 32px;
+    }
+
+    .email {
+      text-align: center;
+      margin: 0 0 24px;
+    }
+
+    a {
+      color: #0864c7;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        font-size: 18px;
+        padding: 40px 20px;
+      }
+      .profile {
+        width: 150px;
+        height: 150px;
+      }
+      h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="profile" src="static/profile.jpg" alt="Leopold Goedhart">
+
+    <h1>Leopold Goedhart</h1>
+
+    <p class="email"><a data-user="leopoldgoedhart" data-domain="gmail.com"></a></p>
+
+    <p class="quote">“The key is not the will to win… everybody has that.<br>It is the will to prepare to win that is important.”<br>—Bobby Knight</p>
+
+    <p>I currently live in Germany, where I was also born, and previously studied Physics at <a href="https://ethz.ch/en.html">ETH Zürich</a> and Quant Finance at <a href="https://www.imperial.ac.uk/">Imperial College London</a>.</p>
+  </div>
+
+  <script>
+    var a = document.querySelector('.email a');
+    var e = a.dataset.user + '@' + a.dataset.domain;
+    a.href = 'mailto:' + e;
+    a.textContent = e;
+  </script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0B0HR2EZYV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0B0HR2EZYV');
+  </script>
+</body>
+</html>
